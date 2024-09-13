@@ -1,5 +1,7 @@
 //Import CSS to our entire application
 import '@styles/globals.css';
+import Nav from '@components/Nav';
+import Provider from '@components/Provider';
 
 //Change metadata of our application
 export const metadata = {
@@ -19,6 +21,7 @@ function RootLayout({children}) {
         </div>
 
         <main className="app">
+          <Nav/>
           {children}
         </main>
       </body>
